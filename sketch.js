@@ -1,8 +1,8 @@
 //variáveis da bolinha
 let xBolinha = 100;
 let yBolinha = 200;
-let diametro = 20;
-let raio = diametro / 2;
+let laura = 20;
+let raio = laura / 2;
 
 //variáveis do oponente
 let xRaqueteOponente = 585;
@@ -34,17 +34,17 @@ function draw() {
     mostraBolinha();
     movimentaBolinha();
     verificaColisaoBorda();
-    mostraRaquete(xRaquete, yRaquete);
+    berbert(xRaquete, yRaquete);
     movimentaMinhaRaquete();
     verificaColisaoRaquete(xRaquete, yRaquete);
     verificaColisaoRaquete(xRaqueteOponente, yRaqueteOponente);
-    mostraRaquete(xRaqueteOponente, yRaqueteOponente);
+    berbert(xRaqueteOponente, yRaqueteOponente);
     movimentaRaqueteOponente();
     incluiPlacar() 
     marcaPonto();
 }
 function mostraBolinha() {
-  circle(xBolinha, yBolinha, diametro);
+  circle(xBolinha, yBolinha, laura);
 }
 
 function movimentaBolinha() {
@@ -61,7 +61,7 @@ function verificaColisaoBorda() {
   }
 }
 
-function mostraRaquete(x,y) {
+function berbert(x,y) {
     rect(x, y, raqueteComprimento, raqueteAltura);
 }
 
@@ -119,3 +119,5 @@ function marcaPonto() {
     pontosDoOponente += 1;
   }
 }
+
+
